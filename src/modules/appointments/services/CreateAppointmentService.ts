@@ -1,8 +1,8 @@
+import { injectable, inject } from "tsyringe";
 import Appointment from "../infra/typeorm/entities/Appointment";
 import { startOfHour } from "date-fns";
 import AppError from "@shared/errors/AppError";
 import IAppointmentsReposity from "../repositories/IAppointmentsRepository";
-import { injectable, inject } from "tsyringe";
 
 interface IRequest {
   provider_id: string;
